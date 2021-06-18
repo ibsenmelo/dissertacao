@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 4 Inferindo o impacto | dissertacao-demo.knit</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 4 Inferindo o impacto | dissertacao-demo.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 4 Inferindo o impacto | dissertacao-demo.knit" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="analise-das-variáveis.html"/>
+<link rel="next" href="conclusão.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Ibsen Melo-Dissertação</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#a-disposição-a-pagar-por-água-potável"><i class="fa fa-check"></i><b>1.1</b> A disposição a pagar por água potável</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#a-crise-hídrica-no-rio-de-janeiro"><i class="fa fa-check"></i><b>1.2</b> A crise hídrica no Rio de Janeiro</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Metodologia</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#descrição-do-local-do-estudo"><i class="fa fa-check"></i><b>2.1</b> Descrição do local do estudo</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#levantamento-e-análise-dos-dados"><i class="fa fa-check"></i><b>2.2</b> Levantamento e análise dos dados</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="intro.html"><a href="intro.html#venda-de-água-mineral"><i class="fa fa-check"></i><b>2.2.1</b> Venda de água mineral</a></li>
+<li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#áreas-de-ponderação-e-dados-socioeconômicos"><i class="fa fa-check"></i><b>2.2.2</b> Áreas de ponderação e dados socioeconômicos</a></li>
+<li class="chapter" data-level="2.2.3" data-path="intro.html"><a href="intro.html#temperatura"><i class="fa fa-check"></i><b>2.2.3</b> Temperatura</a></li>
+<li class="chapter" data-level="2.2.4" data-path="intro.html"><a href="intro.html#análise-dos-dados"><i class="fa fa-check"></i><b>2.2.4</b> Análise dos dados</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="analise-das-variáveis.html"><a href="analise-das-variáveis.html"><i class="fa fa-check"></i><b>3</b> Analise das Variáveis</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="analise-das-variáveis.html"><a href="analise-das-variáveis.html#preço-e-quantidade-consumida-de-água-mineral"><i class="fa fa-check"></i><b>3.1</b> Preço e quantidade consumida de água mineral</a></li>
+<li class="chapter" data-level="3.2" data-path="analise-das-variáveis.html"><a href="analise-das-variáveis.html#dados-do-censo-2010-e-distribuição-espacial"><i class="fa fa-check"></i><b>3.2</b> Dados do censo 2010 e distribuição espacial</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="analise-das-variáveis.html"><a href="analise-das-variáveis.html#renda"><i class="fa fa-check"></i><b>3.2.1</b> Renda</a></li>
+<li class="chapter" data-level="3.2.2" data-path="analise-das-variáveis.html"><a href="analise-das-variáveis.html#escolaridade"><i class="fa fa-check"></i><b>3.2.2</b> Escolaridade</a></li>
+<li class="chapter" data-level="3.2.3" data-path="analise-das-variáveis.html"><a href="analise-das-variáveis.html#sexo"><i class="fa fa-check"></i><b>3.2.3</b> Sexo</a></li>
+<li class="chapter" data-level="3.2.4" data-path="analise-das-variáveis.html"><a href="analise-das-variáveis.html#idade"><i class="fa fa-check"></i><b>3.2.4</b> Idade</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="analise-das-variáveis.html"><a href="analise-das-variáveis.html#receita-total"><i class="fa fa-check"></i><b>3.3</b> Receita total</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inferindo-o-impacto.html"><a href="inferindo-o-impacto.html"><i class="fa fa-check"></i><b>4</b> Inferindo o impacto</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="inferindo-o-impacto.html"><a href="inferindo-o-impacto.html#na-quantidade-via-demanda-de-água-mineral"><i class="fa fa-check"></i><b>4.1</b> Na quantidade via demanda de água mineral</a></li>
+<li class="chapter" data-level="4.2" data-path="inferindo-o-impacto.html"><a href="inferindo-o-impacto.html#no-preço-via-demanda-inversa-de-água-mineral"><i class="fa fa-check"></i><b>4.2</b> No preço via demanda inversa de água mineral</a></li>
+<li class="chapter" data-level="4.3" data-path="inferindo-o-impacto.html"><a href="inferindo-o-impacto.html#na-receita-total-via-controle-sintético"><i class="fa fa-check"></i><b>4.3</b> Na receita total via controle sintético</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusão.html"><a href="conclusão.html"><i class="fa fa-check"></i><b>5</b> Conclusão</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="inferindo-o-impacto" class="section level1" number="4">
+<h1><span class="header-section-number">Capítulo 4</span> Inferindo o impacto</h1>
+<p>Para estimar a demanda de água mineral, em um primeiro momento, é preciso lidar com o problema da causalidade simultânea, a qual é decorrente do fato de que a quantidade afeta o preço ao mesmo tempo em que o preço afeta a quantidade. Desta forma, o preço passa a ser uma variável endógena, situação que viola hipotese básica do modelo dos mínimos quadrados (OLS). A literatura apresenta alternativas para lidar com esse problema, sendo utilizado no presente trabalho a técnica das variáveis instrumentais, ou regressão em dois estágios (2SLS).</p>
+<p>Tal técnica se utiliza de uma terceira variável (instrumento) a qual precisa atender a duas condições para que seja valida <span class="citation">(<a href="#ref-stockwatson" role="doc-biblioref">Stock J. 2011</a>)</span> que são a relevância do instrumento e exogeneidade do instrumento. Ou seja, dado um instrumento <span class="math inline">\(Z\)</span> e uma variável explicativa endógena <span class="math inline">\(X\)</span>, a relevância do instrumento implica em <span class="math inline">\(corr(Z,X) \not= 0\)</span> e a exogeneidade do instrumento implica em <span class="math inline">\(corr(Z,u)=0\)</span>, sendo <span class="math inline">\(u\)</span> o resíduo.</p>
+<p>Desta forma, para estimar a elasticidade preço da demanda, dado por:</p>
+<p><span class="math display">\[ Q = \beta_0 + \beta_1P + u_i \]</span></p>
+<p>O primeiro estágio utiliza <span class="math inline">\(Z\)</span> para estimar a parte de <span class="math inline">\(P\)</span> não influenciada por <span class="math inline">\(Q\)</span>:</p>
+<p><span class="math display">\[ \hat{P} = \pi_0 + \pi_1Z_i + v_i\]</span></p>
+<p>No segundo estágio utiliza-se o <span class="math inline">\(\hat{P}\)</span>, que é o preço estimado sem a influência de <span class="math inline">\(Q\)</span>, para estimar o impacto de <span class="math inline">\(P\)</span> em <span class="math inline">\(Q\)</span>.</p>
+<p><span class="math display">\[ Q = \beta_0 + \beta_1\hat{P} + u_i  \]</span></p>
+<p>Desta maneira, o coeficiente <span class="math inline">\(\beta_1\)</span> não será viesado.</p>
+<p>O teste para avaliar a força da variável instrumental foi realizada com o teste F para o primeiro estágio. O teste assume a hipótese nula de que a variável instrumental é fraca.</p>
+<p>O teste de Wu-Hausman avalia a consistência dos estimadores. Apresenta a hipótese nula de que a endogeneidade não está presente na regressão, não sendo necessário recorrer a IV (variáveis instrumentais).</p>
+<p>Após lidar com a questão da causalidade simultânea, as regressões foram realizadas com os dados em painel<span class="citation">(<a href="#ref-colonescu" role="doc-biblioref">Colonescu 2016</a>)</span>, onde os mesmos foram agragados por semana e por AP. A análise em painel ocorre quando há dados de diversos indivíduos ao longo do tempo. Nesta etapa duas metodologias foram utilizadas: modelo de dados agregados e modelo de efeitos fixos.</p>
+<p>Na primeira etapa foi realizada uma análise com os dados agregados.</p>
+<p><span class="math display" id="eq:pooled">\[\begin{equation} 
+  y_{it} = \beta_{1} + \beta_{2}x_{2it} + ... + \beta_{k}x_{kit} + \xi_{it}
+  \tag{4.1}
+\end{equation}\]</span></p>
+<p>Conforme equação <a href="inferindo-o-impacto.html#eq:pooled">(4.1)</a>, onde i representa cada unidade de observação e t representa a variável tempo. Em seguida, os dados foram análisados utilizando o modelo de efeitos fixos, coforme equação <a href="inferindo-o-impacto.html#eq:fixed">(4.2)</a>.</p>
+<p><span class="math display" id="eq:fixed">\[\begin{equation} 
+  y_{it} = \beta_{1i} + \beta_{2}x_{2it} + ... + \beta_{k}x_{kit} + \xi_{it}
+  \tag{4.2}
+\end{equation}\]</span></p>
+<p>Como é possível observar, a diferença da equação <a href="inferindo-o-impacto.html#eq:fixed">(4.2)</a> em relação a equação <a href="inferindo-o-impacto.html#eq:pooled">(4.1)</a> está no intercepto, posto que este modelo leva em consideração diferenças entre indivíduos. Este modelo é utilizado para contornar o viés da variável omitida. Com isso, esse modelo assume a existência de interceptos distintos para cada unidade observacional <span class="math inline">\(i\)</span>.</p>
+<div id="na-quantidade-via-demanda-de-água-mineral" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Na quantidade via demanda de água mineral</h2>
+<p>A seguir, são apresentados os resultados dos modelos utilizados.</p>
+<table>
+<caption><span id="tab:demagreg">Table 4.1: </span>modelo agregado</caption>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">(Intercept)</td>
+<td align="right">-20.570</td>
+<td align="right">2.834</td>
+<td align="right">-7.259</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="even">
+<td align="left">aguaRuimTRUE</td>
+<td align="right">1.303</td>
+<td align="right">0.116</td>
+<td align="right">11.239</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="odd">
+<td align="left">log_media_preco</td>
+<td align="right">-1.606</td>
+<td align="right">0.455</td>
+<td align="right">-3.532</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="even">
+<td align="left">log(refri1)</td>
+<td align="right">1.188</td>
+<td align="right">0.481</td>
+<td align="right">2.468</td>
+<td align="right">0.014</td>
+</tr>
+<tr class="odd">
+<td align="left">log_renda_pc</td>
+<td align="right">1.158</td>
+<td align="right">0.087</td>
+<td align="right">13.312</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="even">
+<td align="left">log(temp_media)</td>
+<td align="right">5.626</td>
+<td align="right">0.842</td>
+<td align="right">6.680</td>
+<td align="right">0.000</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:demfe">Table 4.2: </span>modelo de efeitos fixos</caption>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">aguaRuimTRUE</td>
+<td align="right">-3.411</td>
+<td align="right">3.510</td>
+<td align="right">-0.972</td>
+<td align="right">0.331</td>
+</tr>
+<tr class="even">
+<td align="left">log_media_preco</td>
+<td align="right">29.577</td>
+<td align="right">23.345</td>
+<td align="right">1.267</td>
+<td align="right">0.205</td>
+</tr>
+<tr class="odd">
+<td align="left">log(refri1)</td>
+<td align="right">-5.669</td>
+<td align="right">4.765</td>
+<td align="right">-1.190</td>
+<td align="right">0.234</td>
+</tr>
+<tr class="even">
+<td align="left">log(temp_media)</td>
+<td align="right">-18.537</td>
+<td align="right">20.066</td>
+<td align="right">-0.924</td>
+<td align="right">0.356</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:demre">Table 4.3: </span>modelo de efeitos aleatórios</caption>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">(Intercept)</td>
+<td align="right">-20.638</td>
+<td align="right">2.815</td>
+<td align="right">-7.332</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="even">
+<td align="left">aguaRuimTRUE</td>
+<td align="right">1.299</td>
+<td align="right">0.115</td>
+<td align="right">11.266</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="odd">
+<td align="left">log_media_preco</td>
+<td align="right">-1.612</td>
+<td align="right">0.454</td>
+<td align="right">-3.552</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="even">
+<td align="left">log(refri1)</td>
+<td align="right">1.193</td>
+<td align="right">0.480</td>
+<td align="right">2.484</td>
+<td align="right">0.013</td>
+</tr>
+<tr class="odd">
+<td align="left">log_renda_pc</td>
+<td align="right">1.168</td>
+<td align="right">0.086</td>
+<td align="right">13.501</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="even">
+<td align="left">log(temp_media)</td>
+<td align="right">5.628</td>
+<td align="right">0.837</td>
+<td align="right">6.726</td>
+<td align="right">0.000</td>
+</tr>
+</tbody>
+</table>
+<p>As tabelas <a href="inferindo-o-impacto.html#tab:demagreg">4.1</a>, <a href="inferindo-o-impacto.html#tab:demfe">4.2</a> e <a href="inferindo-o-impacto.html#tab:demre">4.3</a> apresentam os resultados dos modelos agregado, de efeitos fixos e de efeitos aleatórios. No modelo agregado observa-se um coeficiente de 1,314 para a variável água ruim. Todas as variáveis apresentaram significância estatística, exceto as faixas etárias. No modelo de efeitos aleatórios, a variável água ruim passa a ter um coeficiente de 1,311.</p>
+<table>
+<caption><span id="tab:testinstrument">Table 4.4: </span>teste do instrumento da função demanda</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">statistic</th>
+<th align="right">p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Weak instruments</td>
+<td align="right">189.09</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Wu-Hausman</td>
+<td align="right">15.90</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>Conforme tabela <a href="inferindo-o-impacto.html#tab:testinstrument">4.4</a> a hipótese nula de que a variável instrumental é fraca foi rejeitada, demonstrando a necessidade da utilização de IV. Os testes permitem concluir a existência de endogeneidade, assim como, que a variável utilizada como instrumento é adequada.</p>
+<p>Para avaliar a demanda de água mineral foi utilizada como variável instrumental o preço de bebidas adicionadas de açúcar ou de outros edulcorantes ou aromatizadas e outras bebidas não alcoólicas (NCM: 2202.10.00).</p>
+<table>
+<caption><span id="tab:testf">Table 4.5: </span>Teste para efeitos fixos na função demanda</caption>
+<thead>
+<tr class="header">
+<th align="right">df1</th>
+<th align="right">df2</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="left">method</th>
+<th align="left">alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">176</td>
+<td align="right">2285</td>
+<td align="right">-11.5867</td>
+<td align="right">1</td>
+<td align="left">F test for individual effects</td>
+<td align="left">significant effects</td>
+</tr>
+</tbody>
+</table>
+<p>Foi utilizado o teste-F para comparar o modelo agregado e o modelo de efeitos fixos. A tabela <a href="inferindo-o-impacto.html#tab:testf">4.5</a> mostra que a hipótese nula (em que não há efeitos fixos) é rejeitada. Portanto, o modelo de efeitos fixos é mais adequado do que o modelo agregado.</p>
+<table>
+<caption><span id="tab:randomt2">Table 4.6: </span>Teste de efeitos aleatórios para a equação da demanda</caption>
+<colgroup>
+<col width="10%" />
+<col width="8%" />
+<col width="60%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="left">method</th>
+<th align="left">alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">72.25034</td>
+<td align="right">0</td>
+<td align="left">Lagrange Multiplier Test - (Honda) for unbalanced panels</td>
+<td align="left">significant effects</td>
+</tr>
+</tbody>
+</table>
+<p>Em seguida foi testada a presença de efeitos aleatórios. Conforme tabela <a href="inferindo-o-impacto.html#tab:randomt2">4.6</a>, a hipótese nula de que a variância é zero para cada região foi rejeitada. Ou seja, a heterogeneidade nas regiões é significante.</p>
+<p>Tendo em vista que neste modelo, o evento água ruim foi representado por uma dummy e que o modelo de efeitos aleatórios é o mais adequado, a regressão log-nível apresentou um coeficiente de 1,311. Desta forma, pode-se dizer que o evento, quando ocorre, gera um aumento de 271% (<span class="math inline">\(100 \times [\exp{1.311}-1]\)</span>) no consumo de água mineral.</p>
+<p>Para os demais coeficientes, como a regressão é do tipo log-log, podemos interpretar que os coenficientes sejam a variação percentual na quantidade consumida, dada a variação de 1% na variável explicativa.</p>
+<p>Como resultado, temos a equação da demanda por água mineral através da expressão:</p>
+<p><span class="math display">\[ Ln(Q) = 1.31AR -1.72Ln(P) + 1.40Ln(P_{s})\]</span>
+<span class="math display">\[+ 1.84Ln(R) + .48Ln(SC) + .17Ln(Cr) + 5.68Ln(T)\]</span>
+Sendo:</p>
+<p><span class="math inline">\(Ln\)</span> = logaritmo natural;</p>
+<p><span class="math inline">\(Q\)</span> = o consumo em litros para cada mil habitantes;</p>
+<p><span class="math inline">\(P\)</span> = o preço do litro da água mineral;</p>
+<p><span class="math inline">\(P_{s}\)</span> = o preço do bem substituto (refrigerante);</p>
+<p><span class="math inline">\(AR\)</span> = Água Ruim, uma variável dummy tendo valor 1 para o local e o período em que a água encanada apresentou uma piora de seus atributos organolépticos (uma dummy cruzada, semelhante ao que é utilizado nos modelos de Diff-in-diff);</p>
+<p><span class="math inline">\(R\)</span> = é a renda per capita média;</p>
+<p><span class="math inline">\(SC\)</span> = proporção de pessoas com nível de escolaridade superior completo na população;</p>
+<p><span class="math inline">\(Cr\)</span> = proporção de crianças menores de 3 anos na população;</p>
+<p><span class="math inline">\(T\)</span> = Temperatura média.</p>
+</div>
+<div id="no-preço-via-demanda-inversa-de-água-mineral" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> No preço via demanda inversa de água mineral</h2>
+<table>
+<caption><span id="tab:orientador2">Table 4.7: </span>modelo de efeitos fixos</caption>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">log(q_litros)</td>
+<td align="right">-3.359</td>
+<td align="right">19.096</td>
+<td align="right">-0.176</td>
+<td align="right">0.860</td>
+</tr>
+<tr class="even">
+<td align="left">aguaRuimTRUE</td>
+<td align="right">4.400</td>
+<td align="right">24.125</td>
+<td align="right">0.182</td>
+<td align="right">0.855</td>
+</tr>
+<tr class="odd">
+<td align="left">log(temp_maxima)</td>
+<td align="right">20.330</td>
+<td align="right">111.256</td>
+<td align="right">0.183</td>
+<td align="right">0.855</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:orientador4">Table 4.8: </span>modelo de efeitos aleatórios</caption>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">(Intercept)</td>
+<td align="right">-4.648</td>
+<td align="right">0.460</td>
+<td align="right">-10.106</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">log(q_litros)</td>
+<td align="right">-0.098</td>
+<td align="right">0.019</td>
+<td align="right">-5.298</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">aguaRuimTRUE</td>
+<td align="right">0.270</td>
+<td align="right">0.029</td>
+<td align="right">9.283</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">log_renda_pc</td>
+<td align="right">0.289</td>
+<td align="right">0.021</td>
+<td align="right">13.737</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">log(temp_maxima)</td>
+<td align="right">1.273</td>
+<td align="right">0.136</td>
+<td align="right">9.379</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>As tabelas <a href="inferindo-o-impacto.html#tab:orientador2">4.7</a> e <a href="inferindo-o-impacto.html#tab:orientador4">4.8</a> apresentam os resultados dos modelos de efeitos fixos e de efeitos aleatórios. No modelo de efeitos fixos observa-se um coeficiente de 4.40 para a variável água ruim. Todas as variáveis apresentaram significância estatística. No modelo de efeitos aleatórios a variável água ruim passa a ter um coeficiente de 0,27.</p>
+<table>
+<caption><span id="tab:orientador5">Table 4.9: </span>Teste de Hausman para endogeneidade de efeitos randomicos na equação da demanda inversa.</caption>
+<thead>
+<tr class="header">
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="right">parameter</th>
+<th align="left">method</th>
+<th align="left">alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0.0371597</td>
+<td align="right">0.998116</td>
+<td align="right">3</td>
+<td align="left">Hausman Test</td>
+<td align="left">one model is inconsistent</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:testinstrument1">Table 4.10: </span>Teste do instrumento da função demanda inversa</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">statistic</th>
+<th align="right">p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Weak instruments</td>
+<td align="right">27.76662</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Wu-Hausman</td>
+<td align="right">30.97646</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>Conforme Tabela <a href="inferindo-o-impacto.html#tab:testinstrument1">4.10</a>, podemos concluir pela existência de endogeneidade, assim como, que a variável utilizada como instrumento é adequada para a demanda inversa. Neste caso foi utilizado como instrumento a variável temperatura máxima do dia.</p>
+<table>
+<caption><span id="tab:testf1">Table 4.11: </span>Teste para efeitos fixos na função demanda inversa</caption>
+<thead>
+<tr class="header">
+<th align="right">df1</th>
+<th align="right">df2</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="left">method</th>
+<th align="left">alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">206</td>
+<td align="right">3357</td>
+<td align="right">-16.10137</td>
+<td align="right">1</td>
+<td align="left">F test for individual effects</td>
+<td align="left">significant effects</td>
+</tr>
+</tbody>
+</table>
+<p>A Tabela <a href="inferindo-o-impacto.html#tab:testf1">4.11</a> mostra que a hipótese nula (em que não há efeitos fixos) é rejeitada. Portanto, o modelo de efeitos fixos é preferível em relação ao modelo agregado para a demanda inversa.</p>
+<table>
+<caption><span id="tab:randomt1">Table 4.12: </span>Teste de efeitos aleatórios para a equação da demanda inversa</caption>
+<colgroup>
+<col width="10%" />
+<col width="8%" />
+<col width="60%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="left">method</th>
+<th align="left">alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">96.01878</td>
+<td align="right">0</td>
+<td align="left">Lagrange Multiplier Test - (Honda) for unbalanced panels</td>
+<td align="left">significant effects</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+<p>Em seguida foi testada a presença de efeitos aleatórios. Conforme tabela <a href="inferindo-o-impacto.html#tab:randomt1">4.12</a>, a hipótese nula de que a variância é zero para cada região foi rejeitada. Ou seja, a heterogeneidade nas regiões é significante.</p>
+<p>Desta forma, temos a equação da demanda por água mineral através da expressão:</p>
+<p><span class="math display">\[ Ln(P) = 0.27AR - 0.1Ln(Q) + 0.29Ln(R) + 1.27Ln(T)\]</span></p>
+<p>Sendo:</p>
+<p><span class="math inline">\(Ln\)</span> = logaritmo natural;</p>
+<p><span class="math inline">\(P\)</span> = o preço do litro da água mineral;</p>
+<p><span class="math inline">\(Q\)</span> = o consumo em litros para cada mil habitantes;</p>
+<p><span class="math inline">\(AR\)</span> = Água Ruim, uma variável dummy tendo valor 1 para o local e o período em que a água encanada apresentou uma piora de seus atributos organolépticos (uma dummy cruzada, semelhante ao que é utilizado nos modelos de Diff-in-diff);</p>
+<p><span class="math inline">\(R\)</span> = é a renda per capita média;</p>
+<p><span class="math inline">\(T\)</span> = Temperatura máxima.</p>
+<p>Tendo em vista que neste modelo, o evento foi representado por uma dummy, o modelo de regressão log-linear apresentou um coeficiente de 0,27. Desta forma, pode-se dizer que o evento, quando ocorre, gera um aumento de 29% no preço de água mineral.</p>
+</div>
+<div id="na-receita-total-via-controle-sintético" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Na receita total via controle sintético</h2>
+<p>O controle sintético, segundo <span class="citation"><a href="#ref-Sachsida_2018" role="doc-biblioref">Ellery et al.</a> (<a href="#ref-Sachsida_2018" role="doc-biblioref">2018</a>)</span>, procura mitigar o problema do contrafactual comparando a tendência de uma região atingida pelo choque ou pela política com a tendência em uma região sintética composta pela observação de diversas regiões não atingidas pelo evento. Com isso, o contrafactual gerado (o controle sintético) seria constituido pela média ponderada das regiões de controle disponíveis que mais se aproxima em valores e tendência da região impactada pelo evento antes do evento. Desta forma, ocorre um processo de otimização no qual o peso de cada controle é ajustado de forma a chegar o mais próximo possível do observado na região tratada antes do tratamento.</p>
+<p>Normalmente é utilizado o método de diferenças em diferenças (<em>Dif in Dif</em>) para avaliar o efeito causal de determinado evento ou política pública em determinada região. Contudo, a metodologia do controle sintético é diferente da metodologia de <em>Dif in Dif</em> pois abre mão do pressuposto de paralelismo das tendências, pressuposto este nem sempre factível em decorrência de variáveis de confusão. O método do controle sintético constrói um contrafactual usando as informações dos controles.</p>
+<p>Em nosso trabalho foi utilizado o “controle sintético generalizado” - ou <em>generalized synthetic control</em> (GSC) -, proposto por <span class="citation"><a href="#ref-xu_2017" role="doc-biblioref">Xu</a> (<a href="#ref-xu_2017" role="doc-biblioref">2017</a>)</span>, onde é realizada uma avaliação de controle sintético combinado com o modelo linear de efeitos fixos. Este modelo apresenta a seguinte forma funcional:</p>
+<p><span class="math display" id="eq:gsc">\[\begin{equation} 
+  Y_{it} = \delta_{it}D_{it} + X&#39;_{it}\beta + \lambda&#39;_if_t + \epsilon_{it}
+  \tag{4.3}
+\end{equation}\]</span></p>
+<p>Onde <span class="math inline">\(D_{it}\)</span> representa a existência ou não do evento, assumindo valor 1 em caso positivo e valor 0 em caso negativo. O delta é o efeito heterogêneo do tratamento no tempo t, na unidade <em>i</em>; o <span class="math inline">\(X_{it}\)</span> é um vetor (Kx1) das covariáveis observadas; o beta é um vetor (Kx1) de parâmetros desconhecidos; <span class="math inline">\(f_{t}\)</span> é um vetor de fatores não observáveis comuns; o lambda é um vetor de parâmetros dos fatores; e <span class="math inline">\(\epsilon_{it}\)</span> representa os choques. Maiores dethalhes do método podem ser encontrados em <span class="citation"><a href="#ref-xu_2017" role="doc-biblioref">Xu</a> (<a href="#ref-xu_2017" role="doc-biblioref">2017</a>)</span>.</p>
+<p>Nesta etapa do presente trabalho, o município do Rio de Janeiro foi analisado sem realizar a divisão em áreas de ponderação. Como controle, foram utilizadas as áreas de ponderação do município de Niterói. Para lidar com a diferenção de tamanho entre as regiões comparadas foi realizado um ajuste pelo número de habitantes. A variável endógena “receita total” foi dividida pelo número de habitantes. Com isso a variável Y passa a ser a receita total para cada mil habitantes. Os dados foram analisados com frequência semanal.</p>
+<div class="figure" style="text-align: center"><span id="fig:tabelaSynth0"></span>
+<img src="dissertacao-demo_files/figure-html/tabelaSynth0-1.png" alt="Dados em painel." width="672" />
+<p class="caption">
+Figure 4.1: Dados em painel.
+</p>
+</div>
+<p>Conforme é possível observar na figura <a href="inferindo-o-impacto.html#fig:tabelaSynth0">4.1</a>, trata-se de um painel balanceado. O evento ocorre a partir da semana 7. As regiões representadas por números são as áreas de ponderação.</p>
+<p>Na figura <a href="inferindo-o-impacto.html#fig:graficoSynth1">4.2</a> é possível observar o comportamento da receita ao longo do período analisado. Nesta figura, o município do Rio de Janeiro é representado pela linha preta e as demais áreas de ponderação são representadas pelas linhas claras em azul. Como podemos observar, o comportamento do município do RJ é semelhante ao de seus controles, antes do evento (área cinza claro). Após o evento (área cinza escuro) percebe-se uma forte elevação de receita no RJ, que não é observado nos controles. A linha azul tracejada representa o controle sintético (contrafactual), gerado pelo modelo.</p>
+<div class="figure" style="text-align: center"><span id="fig:graficoSynth1"></span>
+<img src="dissertacao-demo_files/figure-html/graficoSynth1-1.png" alt="controle sintético da receita com água mineral." width="672" />
+<p class="caption">
+Figure 4.2: controle sintético da receita com água mineral.
+</p>
+</div>
+<p>Na Tabela <a href="inferindo-o-impacto.html#tab:tabelaSynth">4.13</a> estão representados os impactos estimados do evento em cada semana. A coluna ATT ( <em>average treatment effect on treated</em> ) representa esse impacto. A coluna “n.Treated” representa a presença ou ausência do evento. Na semana 7, inicio do evento, ocorre um aumento de R$ 518,00 na receita para cada mil habitantes e esse valor alcança R$ 1.015,18 na semana 11.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabelaSynth">Table 4.13: </span>Impacto estimado em cada semana.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+semana
+</th>
+<th style="text-align:right;">
+ATT
+</th>
+<th style="text-align:right;">
+S.E.
+</th>
+<th style="text-align:right;">
+CI.lower
+</th>
+<th style="text-align:right;">
+CI.upper
+</th>
+<th style="text-align:right;">
+p.value
+</th>
+<th style="text-align:right;">
+n.Treated
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="6">
+<td colspan="7" style="border-bottom: 1px solid;">
+<strong>pré evento</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+1
+</td>
+<td style="text-align:right;">
+-0.172
+</td>
+<td style="text-align:right;">
+6.478
+</td>
+<td style="text-align:right;">
+-17.537
+</td>
+<td style="text-align:right;">
+8.673
+</td>
+<td style="text-align:right;">
+0.542
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+2
+</td>
+<td style="text-align:right;">
+1.190
+</td>
+<td style="text-align:right;">
+17.516
+</td>
+<td style="text-align:right;">
+-27.871
+</td>
+<td style="text-align:right;">
+41.606
+</td>
+<td style="text-align:right;">
+0.768
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+3
+</td>
+<td style="text-align:right;">
+-0.769
+</td>
+<td style="text-align:right;">
+17.895
+</td>
+<td style="text-align:right;">
+-28.620
+</td>
+<td style="text-align:right;">
+43.964
+</td>
+<td style="text-align:right;">
+0.876
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+4
+</td>
+<td style="text-align:right;">
+-0.632
+</td>
+<td style="text-align:right;">
+14.880
+</td>
+<td style="text-align:right;">
+-34.906
+</td>
+<td style="text-align:right;">
+27.281
+</td>
+<td style="text-align:right;">
+0.704
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+5
+</td>
+<td style="text-align:right;">
+-0.279
+</td>
+<td style="text-align:right;">
+12.096
+</td>
+<td style="text-align:right;">
+-25.307
+</td>
+<td style="text-align:right;">
+26.762
+</td>
+<td style="text-align:right;">
+0.956
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+6
+</td>
+<td style="text-align:right;">
+0.663
+</td>
+<td style="text-align:right;">
+15.681
+</td>
+<td style="text-align:right;">
+-36.383
+</td>
+<td style="text-align:right;">
+26.368
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr grouplength="7">
+<td colspan="7" style="border-bottom: 1px solid;">
+<strong>pós evento</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+7
+</td>
+<td style="text-align:right;">
+518.011
+</td>
+<td style="text-align:right;">
+78.531
+</td>
+<td style="text-align:right;">
+376.510
+</td>
+<td style="text-align:right;">
+634.203
+</td>
+<td style="text-align:right;">
+0.002
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+8
+</td>
+<td style="text-align:right;">
+957.443
+</td>
+<td style="text-align:right;">
+229.558
+</td>
+<td style="text-align:right;">
+442.626
+</td>
+<td style="text-align:right;">
+1445.112
+</td>
+<td style="text-align:right;">
+0.004
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+9
+</td>
+<td style="text-align:right;">
+761.126
+</td>
+<td style="text-align:right;">
+126.219
+</td>
+<td style="text-align:right;">
+520.363
+</td>
+<td style="text-align:right;">
+1010.940
+</td>
+<td style="text-align:right;">
+0.002
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+10
+</td>
+<td style="text-align:right;">
+932.349
+</td>
+<td style="text-align:right;">
+126.330
+</td>
+<td style="text-align:right;">
+698.653
+</td>
+<td style="text-align:right;">
+1127.180
+</td>
+<td style="text-align:right;">
+0.002
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+11
+</td>
+<td style="text-align:right;">
+1015.189
+</td>
+<td style="text-align:right;">
+373.531
+</td>
+<td style="text-align:right;">
+461.610
+</td>
+<td style="text-align:right;">
+1973.921
+</td>
+<td style="text-align:right;">
+0.008
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+12
+</td>
+<td style="text-align:right;">
+681.732
+</td>
+<td style="text-align:right;">
+104.375
+</td>
+<td style="text-align:right;">
+480.004
+</td>
+<td style="text-align:right;">
+886.926
+</td>
+<td style="text-align:right;">
+0.002
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;" indentlevel="1">
+13
+</td>
+<td style="text-align:right;">
+684.822
+</td>
+<td style="text-align:right;">
+194.680
+</td>
+<td style="text-align:right;">
+395.512
+</td>
+<td style="text-align:right;">
+1171.481
+</td>
+<td style="text-align:right;">
+0.002
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+481.755
+</td>
+<td style="text-align:right;">
+128.864
+</td>
+<td style="text-align:right;">
+264.954
+</td>
+<td style="text-align:right;">
+744.247
+</td>
+<td style="text-align:right;">
+0.002
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+441.294
+</td>
+<td style="text-align:right;">
+100.398
+</td>
+<td style="text-align:right;">
+275.880
+</td>
+<td style="text-align:right;">
+675.031
+</td>
+<td style="text-align:right;">
+0.002
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+472.756
+</td>
+<td style="text-align:right;">
+189.983
+</td>
+<td style="text-align:right;">
+186.905
+</td>
+<td style="text-align:right;">
+935.155
+</td>
+<td style="text-align:right;">
+0.010
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+357.044
+</td>
+<td style="text-align:right;">
+449.955
+</td>
+<td style="text-align:right;">
+-325.121
+</td>
+<td style="text-align:right;">
+1361.881
+</td>
+<td style="text-align:right;">
+0.222
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+<p>Os mesmos dados da Tabela <a href="inferindo-o-impacto.html#tab:tabelaSynth">4.13</a> podem ser visualizados na Figura <a href="inferindo-o-impacto.html#fig:graficoSynth2">4.3</a>. No período pré-evento, o efeito é nulo. Após o evento, observa-se um forte deslocamento para cima na estimativa do efeito e somente na ultima semanda o efeito perde significância estatistica.</p>
+<div class="figure" style="text-align: center"><span id="fig:graficoSynth2"></span>
+<img src="dissertacao-demo_files/figure-html/graficoSynth2-1.png" alt="controle sintético e estimativa de impacto." width="672" />
+<p class="caption">
+Figure 4.3: controle sintético e estimativa de impacto.
+</p>
+</div>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-colonescu" class="csl-entry">
+Colonescu, Constantin. 2016. <em>PoEdata: PoE Data for r</em>. <a href="https://bookdown.org/ccolonescu/RPoE4/intro.html">https://bookdown.org/ccolonescu/RPoE4/intro.html</a>.
+</div>
+<div id="ref-Sachsida_2018" class="csl-entry">
+Ellery, Roberto, Antônio Nascimento, Adolfo Sachsida, and W. 2018. <span>“Controle Sintético Como Ferramenta de Avaliação de Políticas públicas. In:sachsida a. Políticas públicas: Avaliando Mais de Meio Trilhão de Reais Em Gastos públicos.”</span> <em>IPEA</em>, no. 1: 375–97. <a href="https://www.ipea.gov.br/portal/images/stories/PDFs/livros/livros/181009_politicas_publicas_no_brasil_cap12.pdf">https://www.ipea.gov.br/portal/images/stories/PDFs/livros/livros/181009_politicas_publicas_no_brasil_cap12.pdf</a>.
+</div>
+<div id="ref-stockwatson" class="csl-entry">
+Stock J., Watson M. 2011. <em>Introduction to Econometrics (3rd Edition)</em>.
+</div>
+<div id="ref-xu_2017" class="csl-entry">
+Xu, Yiqing. 2017. <span>“Generalized Synthetic Control Method: Causal Inference with Interactive Fixed Effects Models.”</span> <em>Political Analysis</em> 25 (1): 57–76. <a href="https://doi.org/10.1017/pan.2016.2">https://doi.org/10.1017/pan.2016.2</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="analise-das-variáveis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusão.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-demanda.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["dissertacao-demo.pdf", "dissertacao-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

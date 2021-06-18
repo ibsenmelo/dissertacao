@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 4 análise do impacto na demanda de água mineral | Inferindo a disposição a pagar por água potável via demanda de água mineral: um experimento natural</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 4 análise do impacto na demanda de água mineral | Inferindo a disposição a pagar por água potável via demanda de água mineral: um experimento natural" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 4 análise do impacto na demanda de água mineral | Inferindo a disposição a pagar por água potável via demanda de água mineral: um experimento natural" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Ibsen Melo dos Santos Rego, SEFAZ-RJ" />
+<meta name="author" content="Rafael Martins, FGV" />
+<meta name="author" content="Pedro Engel, FGV" />
+
+
+<meta name="date" content="2020-11-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="resultados.html"/>
+<link rel="next" href="anexo.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Ibsen Melo-Dissertação</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#a-disposição-a-pagar-por-água-potável"><i class="fa fa-check"></i><b>1.1</b> A disposição a pagar por água potável</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#a-crise-hídrica-no-rio-de-janeiro"><i class="fa fa-check"></i><b>1.2</b> A crise hídrica no Rio de Janeiro</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Metodologia</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#descrição-do-local-do-estudo"><i class="fa fa-check"></i><b>2.1</b> Descrição do local do estudo</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#levantamento-e-análise-dos-dados"><i class="fa fa-check"></i><b>2.2</b> levantamento e análise dos dados</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="intro.html"><a href="intro.html#venda-de-água-mineral"><i class="fa fa-check"></i><b>2.2.1</b> Venda de água mineral</a></li>
+<li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#áreas-de-ponderação-e-dados-socioeconomicos"><i class="fa fa-check"></i><b>2.2.2</b> Áreas de ponderação e dados socioeconomicos</a></li>
+<li class="chapter" data-level="2.2.3" data-path="intro.html"><a href="intro.html#temperatura"><i class="fa fa-check"></i><b>2.2.3</b> Temperatura</a></li>
+<li class="chapter" data-level="2.2.4" data-path="intro.html"><a href="intro.html#análise-dos-dados"><i class="fa fa-check"></i><b>2.2.4</b> Análise dos dados</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="resultados.html"><a href="resultados.html"><i class="fa fa-check"></i><b>3</b> Resultados</a><ul>
+<li class="chapter" data-level="3.1" data-path="resultados.html"><a href="resultados.html#preço-e-quantidade-consumida-de-água-mineral"><i class="fa fa-check"></i><b>3.1</b> Preço e quantidade consumida de água mineral</a></li>
+<li class="chapter" data-level="3.2" data-path="resultados.html"><a href="resultados.html#dados-do-censo-2010-e-distribuição-espacial"><i class="fa fa-check"></i><b>3.2</b> dados do censo 2010 e distribuição espacial</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="resultados.html"><a href="resultados.html#renda"><i class="fa fa-check"></i><b>3.2.1</b> renda</a></li>
+<li class="chapter" data-level="3.2.2" data-path="resultados.html"><a href="resultados.html#escolaridade"><i class="fa fa-check"></i><b>3.2.2</b> escolaridade</a></li>
+<li class="chapter" data-level="3.2.3" data-path="resultados.html"><a href="resultados.html#sexo"><i class="fa fa-check"></i><b>3.2.3</b> sexo</a></li>
+<li class="chapter" data-level="3.2.4" data-path="resultados.html"><a href="resultados.html#idade"><i class="fa fa-check"></i><b>3.2.4</b> idade</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="resultados.html"><a href="resultados.html#avaliando-a-disposição-a-pagar"><i class="fa fa-check"></i><b>3.3</b> avaliando a disposição a pagar</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="análise-do-impacto-na-demanda-de-água-mineral.html"><a href="análise-do-impacto-na-demanda-de-água-mineral.html"><i class="fa fa-check"></i><b>4</b> análise do impacto na demanda de água mineral</a></li>
+<li class="chapter" data-level="5" data-path="anexo.html"><a href="anexo.html"><i class="fa fa-check"></i><b>5</b> Anexo</a></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Inferindo a disposição a pagar por água potável via demanda de água mineral: um experimento natural</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="análise-do-impacto-na-demanda-de-água-mineral" class="section level1">
+<h1><span class="header-section-number">Capítulo 4</span> análise do impacto na demanda de água mineral</h1>
+<p>Para estimar a demanda de água mineral, em um primeiro momento, é preciso lidar com o problema da causalidade simultânea, a qual é decorrente do fato de que a quantidade afeta o preço ao mesmo tempo em que o preço afeta a quantidade. Desta forma, o preço passa a ser uma variável endógena, situação que viola hipotese básica do modelo dos mínimos quadrados (OLS). A literatura apresenta alternativas para lidar com esse problema, sendo utilizado no presente trabalho a técnica das variáveis instrumentais, ou regressão em dois estágios (2SLS).</p>
+<p>Tal técnica se utiliza de uma terceira variável (instrumento) a qual precisa atender a duas condições para que seja valida <span class="citation">(Stock J. <a href="#ref-stockwatson">2011</a>)</span> que são a relevância do instrumento e exogeneidade do instrumento. Ou seja, dado um instrumento <span class="math inline">\(Z\)</span> e uma variável explicativa endógena <span class="math inline">\(X\)</span>, a relevância do instrumento implica em <span class="math inline">\(corr(Z,X) \not= 0\)</span> e a exogeneidade do instrumento implica em <span class="math inline">\(corr(Z,u)=0\)</span>, sendo <span class="math inline">\(u\)</span> o resíduo.</p>
+<p>Desta forma, para estimar a elasticidade preço da demanda, dado por:</p>
+<p><span class="math display">\[ Q = \beta_0 + \beta_1P + u_i \]</span></p>
+<p>O primeiro estágio utiliza <span class="math inline">\(Z\)</span> para estimar a parte de <span class="math inline">\(P\)</span> não influenciada por <span class="math inline">\(Q\)</span>:</p>
+<p><span class="math display">\[ \hat{P} = \pi_0 + \pi_1Z_i + v_i\]</span></p>
+<p>No segundo estágio utiliza-se o <span class="math inline">\(\hat{P}\)</span>, que é o <span class="math inline">\(P\)</span> estimado sem a influencia de <span class="math inline">\(Q\)</span>, para estimar a influência de <span class="math inline">\(P\)</span> em <span class="math inline">\(Q\)</span>.</p>
+<p><span class="math display">\[ Q = \beta_0 + \beta_1\hat{P} + u_i  \]</span></p>
+<p>Desta maneira, o coeficiente <span class="math inline">\(\beta_1\)</span> não será viesado.</p>
+<p>O teste para avaliar a força da variável instrumental foi realizada com o teste F para o primeiro estágio. O teste assume a hipótese nula de que a variável instrumental é fraca. Conforme tabela <a href="análise-do-impacto-na-demanda-de-água-mineral.html#tab:testinstrument">4.1</a> a hipótese nula foi rejeitada.</p>
+<table>
+<caption>
+<span id="tab:testinstrument">Table 4.1: </span>testando o instrumento
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+teste
+</th>
+<th style="text-align:left;">
+estatistica
+</th>
+<th style="text-align:left;">
+valor_p
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+weak instruments
+</td>
+<td style="text-align:left;">
+154.52
+</td>
+<td style="text-align:left;">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wu-Hausman
+</td>
+<td style="text-align:left;">
+15.94
+</td>
+<td style="text-align:left;">
+&lt;0.01
+</td>
+</tr>
+</tbody>
+</table>
+<p>O teste de Wu-Hausman avalia a consistencia dos estimadores. Apresenta a hipótese nula de que a endogeneidade não está presente na regressão, não sendo necessário recorrer a IV (variáveis instrumentais). Este teste rejeitou a hipótese nula, demonstrando a necessidade da utilização de IV.</p>
+<p>Após lidar com a questão da causalidade simultânea, as regressões foram realizadas com os dados em painel, onde os mesmos foram agragados por semana e por AP. A análise em painel ocorre quando há dados de diversos indivíduos ao longo do tempo. Nesta etapa três metodologias foram utilizadas: modelo de dados agregados, modelo de efeitos fixos e modelo de efeitos aleatórios.</p>
+<p>Na primeira etapa foi realizada uma análise com os dados agregados.</p>
+<p><span class="math display" id="eq:pooled">\[\begin{equation} 
+  y_{it} = \beta_{1} + \beta_{2}x_{2it} + ... + \beta_{k}x_{kit} + \xi_{it}
+  \tag{4.1}
+\end{equation}\]</span></p>
+<p>Conforme equação <a href="análise-do-impacto-na-demanda-de-água-mineral.html#eq:pooled">(4.1)</a>, onde i representa cada unidade de observação e t representa a variável tempo. Em seguida, os dados foram análisados utilizando o modelo de efeitos fixos, coforme equação <a href="análise-do-impacto-na-demanda-de-água-mineral.html#eq:fixed">(4.2)</a>.</p>
+<p><span class="math display" id="eq:fixed">\[\begin{equation} 
+  y_{it} = \beta_{1i} + \beta_{2}x_{2it} + ... + \beta_{k}x_{kit} + \xi_{it}
+  \tag{4.2}
+\end{equation}\]</span></p>
+<p>Como é possível observar, a diferença da equação <a href="análise-do-impacto-na-demanda-de-água-mineral.html#eq:fixed">(4.2)</a> em relação a equação <a href="análise-do-impacto-na-demanda-de-água-mineral.html#eq:pooled">(4.1)</a> está no intercepto, posto que este modelo leva em consideração diferenças entre indivíduos. Este modelo é utilizado para contornar o viés da variável omitida. Com isso, esse modelo assume a existência de interceptos distintos para cada unidade observacional <span class="math inline">\(i\)</span>.</p>
+<p>Em uma terceira etapa, foi utilizado o modelo de efeitos aleatórios<span class="citation">(Colonescu <a href="#ref-colonescu">2016</a>)</span>, o qual adota o intercepto <span class="math inline">\(\beta_{1i}\)</span> como uma variável aleatória. Neste caso, conforme equação <a href="análise-do-impacto-na-demanda-de-água-mineral.html#eq:betarandom">(4.3)</a> o coeficiente <span class="math inline">\(\beta_{1i}\)</span> é obtido da média <span class="math inline">\(\bar{\beta_{1}}\)</span> mais um valor aleatorio que é específico para cada indivíduo <span class="math inline">\(u_i\)</span>.</p>
+<p><span class="math display" id="eq:betarandom">\[\begin{equation} 
+  \beta_{1i} = \bar{\beta_{1}} + u_i
+  \tag{4.3}
+\end{equation}\]</span></p>
+<p>Desta forma, a equação final <a href="análise-do-impacto-na-demanda-de-água-mineral.html#eq:randomeq">(4.4)</a> passa a ter o seguinte formato:</p>
+<p><span class="math display" id="eq:randomeq">\[\begin{equation} 
+  y_{it} = \bar{\beta_{1i}} + \beta_{2}x_{2it} + ... + \beta_{k}x_{kit} + v_{it}
+  \tag{4.4}
+\end{equation}\]</span></p>
+<p>Onde: <span class="math inline">\(v_{it} = u_i + \xi_{it}\)</span></p>
+<p>A seguir, são apresentados os resultados dos modelos utilizados.</p>
+<table>
+<caption>
+<span id="tab:pooled">Table 4.2: </span>modelo agregado
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+term
+</th>
+<th style="text-align:right;">
+estimate
+</th>
+<th style="text-align:right;">
+std.error
+</th>
+<th style="text-align:right;">
+statistic
+</th>
+<th style="text-align:right;">
+p.value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+(Intercept)
+</td>
+<td style="text-align:right;">
+-11.662
+</td>
+<td style="text-align:right;">
+1.761
+</td>
+<td style="text-align:right;">
+-6.623
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log_media_preco
+</td>
+<td style="text-align:right;">
+-1.630
+</td>
+<td style="text-align:right;">
+0.454
+</td>
+<td style="text-align:right;">
+-3.592
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(refri1)
+</td>
+<td style="text-align:right;">
+1.335
+</td>
+<td style="text-align:right;">
+0.466
+</td>
+<td style="text-align:right;">
+2.868
+</td>
+<td style="text-align:right;">
+0.004
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+aguaRuimTRUE
+</td>
+<td style="text-align:right;">
+1.363
+</td>
+<td style="text-align:right;">
+0.117
+</td>
+<td style="text-align:right;">
+11.666
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log_renda_pc
+</td>
+<td style="text-align:right;">
+1.915
+</td>
+<td style="text-align:right;">
+0.134
+</td>
+<td style="text-align:right;">
+14.295
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+temp_maxima
+</td>
+<td style="text-align:right;">
+0.175
+</td>
+<td style="text-align:right;">
+0.025
+</td>
+<td style="text-align:right;">
+7.009
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(mulher)
+</td>
+<td style="text-align:right;">
+1.750
+</td>
+<td style="text-align:right;">
+1.311
+</td>
+<td style="text-align:right;">
+1.335
+</td>
+<td style="text-align:right;">
+0.182
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(superior_completo)
+</td>
+<td style="text-align:right;">
+-0.530
+</td>
+<td style="text-align:right;">
+0.102
+</td>
+<td style="text-align:right;">
+-5.181
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(menor_3anos)
+</td>
+<td style="text-align:right;">
+0.354
+</td>
+<td style="text-align:right;">
+0.207
+</td>
+<td style="text-align:right;">
+1.713
+</td>
+<td style="text-align:right;">
+0.087
+</td>
+</tr>
+</tbody>
+</table>
+<p>A tabela <a href="análise-do-impacto-na-demanda-de-água-mineral.html#tab:pooled">4.2</a> apresenta o resultado do modelo agregado. Neste caso observa-se uma elasticidade preço da demanda de 1.63. Todas as variáveis apresentaram significância estatística, exceto sexo.</p>
+<table>
+<caption>
+<span id="tab:plmwithin">Table 4.3: </span>Modelo de efeitos fixos
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+term
+</th>
+<th style="text-align:right;">
+estimate
+</th>
+<th style="text-align:right;">
+std.error
+</th>
+<th style="text-align:right;">
+statistic
+</th>
+<th style="text-align:right;">
+p.value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+log_media_preco
+</td>
+<td style="text-align:right;">
+-2.45025
+</td>
+<td style="text-align:right;">
+0.41777
+</td>
+<td style="text-align:right;">
+-5.86513
+</td>
+<td style="text-align:right;">
+0.00000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(refri1)
+</td>
+<td style="text-align:right;">
+2.10280
+</td>
+<td style="text-align:right;">
+0.42462
+</td>
+<td style="text-align:right;">
+4.95214
+</td>
+<td style="text-align:right;">
+0.00000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+aguaRuimTRUE
+</td>
+<td style="text-align:right;">
+1.28960
+</td>
+<td style="text-align:right;">
+0.25259
+</td>
+<td style="text-align:right;">
+5.10543
+</td>
+<td style="text-align:right;">
+0.00000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log_renda_pc
+</td>
+<td style="text-align:right;">
+1.93735
+</td>
+<td style="text-align:right;">
+0.12237
+</td>
+<td style="text-align:right;">
+15.83208
+</td>
+<td style="text-align:right;">
+0.00000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+temp_maxima
+</td>
+<td style="text-align:right;">
+-0.70068
+</td>
+<td style="text-align:right;">
+0.09898
+</td>
+<td style="text-align:right;">
+-7.07908
+</td>
+<td style="text-align:right;">
+0.00000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(mulher)
+</td>
+<td style="text-align:right;">
+2.03352
+</td>
+<td style="text-align:right;">
+1.16913
+</td>
+<td style="text-align:right;">
+1.73935
+</td>
+<td style="text-align:right;">
+0.08197
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(superior_completo)
+</td>
+<td style="text-align:right;">
+-0.42217
+</td>
+<td style="text-align:right;">
+0.09042
+</td>
+<td style="text-align:right;">
+-4.66908
+</td>
+<td style="text-align:right;">
+0.00000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(menor_3anos)
+</td>
+<td style="text-align:right;">
+0.51833
+</td>
+<td style="text-align:right;">
+0.18362
+</td>
+<td style="text-align:right;">
+2.82288
+</td>
+<td style="text-align:right;">
+0.00476
+</td>
+</tr>
+</tbody>
+</table>
+<p>A tabela <a href="análise-do-impacto-na-demanda-de-água-mineral.html#tab:plmwithin">4.3</a> apresenta o resultado do modelo de efeitos fixos. Neste caso a elasticidade preço da demanda apresenta um aumento para o valor de 2.45. A variável sexo passa ter significância (valor-p &lt; 0.10).</p>
+<table>
+<caption>
+<span id="tab:plmrandom">Table 4.4: </span>Resultado do efeito aleatorio na equação do consumo
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+term
+</th>
+<th style="text-align:right;">
+estimate
+</th>
+<th style="text-align:right;">
+std.error
+</th>
+<th style="text-align:right;">
+statistic
+</th>
+<th style="text-align:right;">
+p.value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+(Intercept)
+</td>
+<td style="text-align:right;">
+13.0674
+</td>
+<td style="text-align:right;">
+3.2115
+</td>
+<td style="text-align:right;">
+4.0689
+</td>
+<td style="text-align:right;">
+0.0000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log_media_preco
+</td>
+<td style="text-align:right;">
+-2.4865
+</td>
+<td style="text-align:right;">
+0.4174
+</td>
+<td style="text-align:right;">
+-5.9573
+</td>
+<td style="text-align:right;">
+0.0000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(refri1)
+</td>
+<td style="text-align:right;">
+2.1370
+</td>
+<td style="text-align:right;">
+0.4244
+</td>
+<td style="text-align:right;">
+5.0358
+</td>
+<td style="text-align:right;">
+0.0000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+aguaRuimTRUE
+</td>
+<td style="text-align:right;">
+1.3052
+</td>
+<td style="text-align:right;">
+0.2498
+</td>
+<td style="text-align:right;">
+5.2241
+</td>
+<td style="text-align:right;">
+0.0000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log_renda_pc
+</td>
+<td style="text-align:right;">
+1.9473
+</td>
+<td style="text-align:right;">
+0.1223
+</td>
+<td style="text-align:right;">
+15.9224
+</td>
+<td style="text-align:right;">
+0.0000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+temp_maxima
+</td>
+<td style="text-align:right;">
+-0.6422
+</td>
+<td style="text-align:right;">
+0.0957
+</td>
+<td style="text-align:right;">
+-6.7077
+</td>
+<td style="text-align:right;">
+0.0000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(mulher)
+</td>
+<td style="text-align:right;">
+1.9972
+</td>
+<td style="text-align:right;">
+1.1700
+</td>
+<td style="text-align:right;">
+1.7071
+</td>
+<td style="text-align:right;">
+0.0878
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(superior_completo)
+</td>
+<td style="text-align:right;">
+-0.4235
+</td>
+<td style="text-align:right;">
+0.0905
+</td>
+<td style="text-align:right;">
+-4.6782
+</td>
+<td style="text-align:right;">
+0.0000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+log(menor_3anos)
+</td>
+<td style="text-align:right;">
+0.5155
+</td>
+<td style="text-align:right;">
+0.1838
+</td>
+<td style="text-align:right;">
+2.8049
+</td>
+<td style="text-align:right;">
+0.0050
+</td>
+</tr>
+</tbody>
+</table>
+<p>A tabela <a href="análise-do-impacto-na-demanda-de-água-mineral.html#tab:plmrandom">4.4</a> apresenta o resultado do modelo de efeitos aleatórios. Neste caso a elasticidade preço da demanda apresenta uma pequena variação em relação ao modelo anterior, com aumento para o valor de 2.49. A variável sexo permanece significante (valor-p &lt; 0.10).</p>
+<table>
+<caption>
+<span id="tab:testf">Table 4.5: </span>Teste para efeitos fixos: Ho: não há efeitos fixos
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+df1
+</th>
+<th style="text-align:right;">
+df2
+</th>
+<th style="text-align:right;">
+statistic
+</th>
+<th style="text-align:right;">
+p.value
+</th>
+<th style="text-align:left;">
+method
+</th>
+<th style="text-align:left;">
+alternative
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+2459
+</td>
+<td style="text-align:right;">
+39.19107
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+F test for individual effects
+</td>
+<td style="text-align:left;">
+significant effects
+</td>
+</tr>
+</tbody>
+</table>
+<p>Numa primeira etapa foi utilizado o teste-F para comparar o modelo agregado e o modelo de efeitos fixos. A tabela <a href="análise-do-impacto-na-demanda-de-água-mineral.html#tab:testf">4.5</a> mostra que a hipótese nula onde não há efeitos fixos é rejeitada. Em seguida, realizou-se o teste de hausman para comparar o modelo de efeitos fixos e o modelo de efeitos aleatórios.</p>
+<table>
+<caption>
+<span id="tab:hausman">Table 4.6: </span>Teste de Hausman para efeitos aleatórios do modelo de consumo
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+statistic
+</th>
+<th style="text-align:right;">
+p.value
+</th>
+<th style="text-align:right;">
+parameter
+</th>
+<th style="text-align:left;">
+method
+</th>
+<th style="text-align:left;">
+alternative
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+3.668554
+</td>
+<td style="text-align:right;">
+0.8857219
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Hausman Test
+</td>
+<td style="text-align:left;">
+one model is inconsistent
+</td>
+</tr>
+</tbody>
+</table>
+<p>A Tabela <a href="análise-do-impacto-na-demanda-de-água-mineral.html#tab:hausman">4.6</a> apresenta o teste de Hausman o qual indica como hipótese nula a existencia de efeitos aleatórios. Tendo em vista o alto valor-p, neste caso o modelo de efeitos aleatórios se apresenta como a melhor alternativa.</p>
+<p>Como resultado, temos a equação da demanda por água mineral através da expressão:</p>
+<p><span class="math display">\[ Ln(Q) = 13.07 -2.49Ln(P) + 2.13Ln(P_{s}) + 1.31AR\]</span>
+<span class="math display">\[+ 1.42Ln(R) - .67T + 2.0Ln(M) - .42Ln(SC) + .52Ln(Cr)\]</span>
+Sendo:</p>
+<p><span class="math inline">\(Ln\)</span> = logaritmo natural;</p>
+<p><span class="math inline">\(Q\)</span> = o consumo em litros para cada mil habitantes;</p>
+<p><span class="math inline">\(P\)</span> = o preço do litro da água mineral;</p>
+<p><span class="math inline">\(P_{s}\)</span> = o preço do bem substituto (refrigerante);</p>
+<p><span class="math inline">\(AR\)</span> = Água Ruim, uma variável dummy tendo valor 1 para o local e o período em que a água encanada apresentou uma piora de seus atributos organolépticos (uma dummy cruzada, semelhante ao que é utilizado nos modelos de Diff-in-diff);</p>
+<p><span class="math inline">\(R\)</span> = é a renda per capita média;</p>
+<p><span class="math inline">\(T\)</span> = é a temperatura máxima do dia;</p>
+<p><span class="math inline">\(M\)</span> = proporção de mulheres na população;</p>
+<p><span class="math inline">\(SC\)</span> = proporção de pessoas com nível de escolaridade superior completo na população;</p>
+<p><span class="math inline">\(Cr\)</span> = proporção de crianças menores de 3 anos na população;</p>
+<p>Tendo em vista que neste modelo, o evento foi representado por uma dummy, o modelo de regressão log-linear apresentou um coeficiente de 1,31. Desta forma, pode-se dizer que o evento, quando ocorre, gera um aumento de 266,9% (<span class="math inline">\(100 \times (\exp{1.31}-1)\)</span>) no consumo de água mineral.</p>
+<p>Para os demais coeficientes, como a regressão é do tipo log-log, podemos interpretar que os coenficientes sejam a variação percentual na quantidade consumida, dada a variação de 1% na variável explicativa.</p>
+<p>Desta forma, a elasticidade preço da demanda observado em nosso estudo ficou em 2,49, demonstrando uma alta elasticidade. Neste ponto cabe citar estudo realizado no Espirito Santo <span class="citation">(Kenneth E. McConnell <a href="#ref-wtpespiritosanto">2000</a>)</span> no qual os autores observaram que apenas 4% da população estudada utilizava água mineral.</p>
+<p>Em estudo realizado na espanha <span class="citation">(Marta Suárez-Varela <a href="#ref-martasuarez">2017</a>)</span>, onde os autores relatam ser o nono maior país do mundo em consumo de água mineral, foi observado que 32,2% da população consumia água mineral regularmente e a média de consumo foi de 4,3 litros por habitante por semana. Ou seja, apesar da água ser um bem essencial, a água mineral não apresenta essa mesma caracteristica.</p>
+<p>Entretanto, avaliar o aumento da receita de vendas de água mineral pode ser utilizado como uma <em>proxy</em> da WTP por água potável. Quando a WTP é avaliada a partir do gasto mensal do domicílio, este estudo encontrou um valor de U$ 7,89, ou seja, este foi o valor médio do gasto domiciliar no mês de fevereiro de 2020. Valor próximo ao encontrados por outros autores (<span class="citation">Rodgers Makwinja (<a href="#ref-wtpmalawi">2019</a>)</span> e <span class="citation">Kenneth E. McConnell (<a href="#ref-wtpespiritosanto">2000</a>)</span>).</p>
+<p>Além disso, o impacto total do evento, quando medido através da receita total com água mineral no período de janeiro a março foi estimado em R$ 79 milhões. Tal impacto foi medido apenas na cidade do Rio de Janeiro, sendo que o referido problema ocorreu em diversos municípios da Região Metropolitana do estado do Rio de Janeiro.</p>
+<p>Contudo, devemos ressaltar que a aquisição de água mineral não é a única forma de contornar a questão do fornecimento de água encanada de baixa qualidade. Diversos estudos (<span class="citation">Doria (<a href="#ref-migueldoria">2006</a>)</span>, <span class="citation">Foltz (<a href="#ref-franzfoltz">1999</a>)</span>, <span class="citation">Kenneth E. McConnell (<a href="#ref-wtpespiritosanto">2000</a>)</span>, <span class="citation">Nick Johnstone (<a href="#ref-serret">2012</a>)</span>) apontam que outras alternativas comumente adotadas incluem a aquisição de filtros ou a fervura da água, os quais apresentam seus próprios custos. Tais custos não foram considerados no presente estudo.</p>
+<p>Para exemplificar o tamanho do mercado de água mineral, em setembro de 2020, o fundador da empresa Nongfu, gigante chinesa de produção de água engarrafada, se tornou o homem mais rico da China e o décimo sétimo do mundo. A empresa chegou a alcançar um valor de mercado equivalente a R$ 300 bilhões na bolsa de valores de Hong Kong.</p>
+<p>Com relação às externalidades, o consumo de água mineral gera uma maior produção de residuos não biodegradáveis decorrentes das garrafas plásticas, os quais trazem forte impacto para o meio ambiente. Ainda temos o maior consumo energético necessário para a produção de água mineral quando comparado a produção de água encanada, podendo chegar a um consumo 2000 vezes maior de energia<span class="citation">(Marta Suárez-Varela <a href="#ref-martasuarez">2017</a>)</span>.</p>
+
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-colonescu">
+<p>Colonescu, Constantin. 2016. <em>PoEdata: PoE Data for R</em>. <a href="https://bookdown.org/ccolonescu/RPoE4/intro.html">https://bookdown.org/ccolonescu/RPoE4/intro.html</a>.</p>
+</div>
+<div id="ref-migueldoria">
+<p>Doria, Miguel. 2006. “Bottled Water Versus Tap Water: Understanding Consumers’ Preferences.” <em>Journal of Water and Health</em> july: 271–76.</p>
+</div>
+<div id="ref-franzfoltz">
+<p>Foltz, Franz. 1999. “Science, Pollution, and Clean Drinking Water: Choosing Between Tap Water, Bottled Water, and Home Purification.” <em>Bulletin of Science, Technology &amp; Society</em> 19: 300–309.</p>
+</div>
+<div id="ref-wtpespiritosanto">
+<p>Kenneth E. McConnell, Marcia A. Rosado. 2000. “Valuing Discrete Improvements in Drinking Water Quality Through Revealed Preferences.” <em>WATER RESOURCES RESEARCH</em> june: 1575–82.</p>
+</div>
+<div id="ref-martasuarez">
+<p>Marta Suárez-Varela, Ariel Dinar. 2017. “A Double-Hurdle Approach for Estimation of Bottled Water Demand Under Consumer Environmental Attitudes and Water Conservation Policies.” <em>UCR SPP Working Paper Series</em> wp: 17–01.</p>
+</div>
+<div id="ref-serret">
+<p>Nick Johnstone, Ysé Serret. 2012. “Determinants of Bottled and Purified Water Consumption: Results Based on an Oecd Survey.” <em>Water Policy</em> 14: 668–79.</p>
+</div>
+<div id="ref-wtpmalawi">
+<p>Rodgers Makwinja, Chikumbusko Chiziwa Kaonga, Ishmael Bobby Mphangwe Kosamu. 2019. “Determinants and Values of Willingness to Pay for Water Quality Improvement: Insights from Chia Lagoon, Malawi.” <em>Sustainability</em> 11: 4690–4716.</p>
+</div>
+<div id="ref-stockwatson">
+<p>Stock J., Watson M. 2011. <em>Introduction to Econometrics (3rd Edition)</em>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="resultados.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="anexo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-conclusao.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["dissertacao-demo.pdf", "dissertacao-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
